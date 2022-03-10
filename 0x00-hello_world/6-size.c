@@ -1,5 +1,6 @@
 #include <stdio.h>
-/** main - prints various types' sizes on computer
+/**
+ * main - prints various types' sizes on computer
  * Return: 0 successfully exited non zero Otherwise
  */
 int main(void)
