@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <string.h>
-
+/**
+ * main -prints the phrase Programming is like building a multilingual puzzle
+ * Return 0 if exited ok, non ero otherwise
+ */
 int main(void)
 {
-	char str1[60];
-
-	strcpy(str1, "Programming is like building a multilingual puzzle");
-	puts(str1);
+	puts("Programming is like building a multilingual puzzle\n");
 
 	return(0);
 }
