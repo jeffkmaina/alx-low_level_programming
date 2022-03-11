@@ -1,5 +1,5 @@
  
-sitive_or_negative.c is a C program that will assign a random number to the variable n each time it is executed, using an if statement.
+File 0-Positive_or_negative.c is a C program that will assign a random number to the variable n each time it is executed, using an if statement.
 
 File 1-last_digit.c is a C program that will assign a random number to the variable n each time it is executed using another if statement.
 
@@ -25,4 +25,4 @@ File 100-print_comb3.c is a program that prints all possible different combinati
 
 File 101-print_comb4.c is a program that prints all possible different combinations of three digits.
 
-File 102-print_comb5.c is a program that prints all possible combinations of two two-digit numbers.
+File 102-print_comb5.c is a program that prints all possible combinations of two two-digit numbers
