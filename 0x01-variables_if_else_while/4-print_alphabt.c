@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - print alphabet apart from q and e
  * Return: 0 exited successfully
  */
