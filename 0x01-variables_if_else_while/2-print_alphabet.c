@@ -1,15 +1,16 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: 0 if exited successfully non zero OW
-**/
+ *  main - Entry Point
+ *  Return: 0 exited success non zero OW
+ *
+ */
 
 int main(void)
 {
-	char x;
+	char ch;
 
-	for (x = 'a'; x <= 'z'; x++)
-		putchar (x);
-		putchar ('\n');
+	for (ch == 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+		putchar('\n');
 	return (0);
 }
