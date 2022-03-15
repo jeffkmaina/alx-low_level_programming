@@ -15,7 +15,7 @@ void print_to_98(int n)
 
 	while (n < 1024)
 	{
-		if (n % 3 == 0) || (n % 5 == 0))
+		if ((n % 3 == 0) || (n % 5 == 0))
 		{
 			sum += n;
 		}
