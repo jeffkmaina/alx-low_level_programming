@@ -8,7 +8,7 @@
 
 void print_to_98(int n)
 {
-	int sum;
+	nt sum;
 
 	sum = 0;
 	n = 0;
@@ -19,6 +19,7 @@ void print_to_98(int n)
 		{
 			sum += n;
 		}
+	_putchar (n + '0');
 	n++;
 	}
-}	
+}
