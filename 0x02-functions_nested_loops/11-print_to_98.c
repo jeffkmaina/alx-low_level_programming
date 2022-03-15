@@ -8,7 +8,7 @@
 
 void print_to_98(int n)
 {
-	nt sum;
+	int sum;
 
 	sum = 0;
 	n = 0;
