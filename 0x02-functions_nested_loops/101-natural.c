@@ -27,6 +27,6 @@ int main(void)
 		}
 	}
 	c = a + b;
-	printf("%u\n", c);
-	return (0);
+	printf("%lu\n", c);
+	(return (0);
 }
