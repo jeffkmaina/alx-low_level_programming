@@ -28,5 +28,5 @@ int main(void)
 	}
 	c = a + b;
 	printf("%lu\n", c);
-	(return (0);
+	return (0);
 }
