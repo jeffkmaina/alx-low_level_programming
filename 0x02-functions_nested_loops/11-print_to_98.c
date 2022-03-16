@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - prints all natural
@@ -8,18 +9,20 @@
 
 void print_to_98(int n)
 {
-	int sum;
-
-	sum = 0;
-	n = 0;
-
-	while (n < 1024)
+	if (n < 98)
 	{
-		if ((n % 3 == 0) || (n % 5 == 0))
+		for (n = n; n < 98; n++)
 		{
-			sum += n;
+			printf("%d, ", n);
+			printf("%d\n", 98);
 		}
-	_putchar (n + '0');
-	n++;
+	else
+	{
+		for (n = n; n > 98; n--)
+		{
+			printf("%d, ", n);
+			printf("%d\n", 98);
+		}
+	}
 	}
 }
