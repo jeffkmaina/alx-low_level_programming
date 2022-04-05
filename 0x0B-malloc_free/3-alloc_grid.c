@@ -1,43 +1,40 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
- * alloc_grid - a function that returns a pointer to a 2 dimensional
- * array of integers.
- * @width: width of array
- * @height: height of array
- * Return: NULL on failure
+ * alloc_grid - Returns a pointer to a 2-dimensional array of
+ *               integers with each element initalized to 0.
+ * @width: The width of the 2-dimensional array.
+ * @height: The height of the 2-dimensional array.
+ *
+ * Return: If width <= 0, height <= 0, or the function fails - NULL.
+ *         Otherwise - a pointer to the 2-dimensional array of integers.
  */
-
 int **alloc_grid(int width, int height)
 {
-	int **grid;
+	int **arr;
 	int i, j;
-
-	if (height <= 0 || width <= 0) /*validate input*/
+	
+	if (height <= 0 || width  <= 0)
 		return (NULL);
-
-	grid = malloc(height * sizeof(int *)); /*allocate memory for rows*/
-
-	if (grid == NULL) /* validate memory*/
+	arr = (int **)malloc(sizeof(int *) * height);
+	
+	if (arr == NULL)
 		return (NULL);
-
 	for (i = 0; i < height; i++)
 	{
-		grid[i] = malloc(width * sizeof(int *)); /* allocate mem for column
-							  * in each row
-							  */
-		if (grid[i] == NULL) /* validate memory*/
+		arr[i] = (int *)malloc(sizeof(int) * width);
+		if (arr[i] == NULL)
 		{
-			for (i = 0; i < height; i++)
-				free(grid[i]);
-			free(grid);
+			for (j = 0; j < i; j++)
+				free(arr[j]);
+			free(arr);
 			return (NULL);
 		}
-
-		for (j = 0; j < width; j++) /* set array to zero*/
-			grid[i][j] = 0;
+		for (j = 0; j < width; j++)
+		{
+			arr[i][j] = 0;
+		}
 	}
-	return (grid);
+	return (arr);
 }
