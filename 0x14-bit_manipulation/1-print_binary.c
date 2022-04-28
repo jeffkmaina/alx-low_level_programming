@@ -8,7 +8,6 @@
 
 void print_binary(unsigned long int n)
 {
-	
 	int i, count = 0;
 	unsigned long int current;
 
@@ -16,7 +15,7 @@ void print_binary(unsigned long int n)
 	{
 		current = n >> i;
 
-	
+
 		if (current & 1)
 		{
 			_putchar('1');
